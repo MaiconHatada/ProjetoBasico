@@ -42,8 +42,8 @@ public class BaseTest extends DriverFactory {
 	 FileUtils.copyFile(arquivo, new File ("target"+ File.separator + "screenshot" + File.separator + 
 	 testName.getMethodName() + "jpg"));
 	 
-//	 if(Propriedades.FECHAR_BROWSER) {
-//	 killDriver();
+	 if(Propriedades.FECHAR_BROWSER) {
+	 killDriver();
  }
- 
+ }
 }
