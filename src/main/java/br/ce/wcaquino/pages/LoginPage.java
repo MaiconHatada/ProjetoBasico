@@ -22,7 +22,7 @@ public class LoginPage extends BasePage {
 	}
 	
 	public void entrar() {
-		clicarBotao(By.xpath("/html/body/div[2]/form/button"));
+		clicarBotaoPorTexto("Entrar");
 		
 	}
 	

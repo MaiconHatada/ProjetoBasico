@@ -41,5 +41,25 @@ public class ContaTest extends BaseTest {
 		
 		
 	}
-
+	 @Test
+	 public void testInserirContaMesmoNome() {
+		 menuPage.acessarTelaInserirConta();
+		 
+		 contasPage.setNome("Conta do teste alterada");
+		 contasPage.salvar();
+		 
+		 Assert.assertEquals("Já existe uma conta com esse nome!" , 
+					contasPage.obterMensagemErro());
 }
+	 @Test
+	 public void testExcluirContaComMovimentacao() {
+		 menuPage.acessarTelaListarConta();
+		 
+		 contasPage.clicarExcluirConta("Conta do teste alterada");
+		 
+		 Assert.assertEquals("Conta em uso na movimentações" , 
+					contasPage.obterMensagemErro());
+	 }
+	 
+	 }
+
