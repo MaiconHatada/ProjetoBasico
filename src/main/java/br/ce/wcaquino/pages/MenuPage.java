@@ -24,4 +24,9 @@ public class MenuPage extends BasePage {
 		
 		
 	}
+	public void acessarTelaPrincipal() {
+		clicarLink("Home");
+		
+		
+	}
 }

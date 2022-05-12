@@ -9,6 +9,8 @@ public class ResumoPage extends BasePage {
 		clicarBotao(By.xpath("//*[@id=\"tabelaExtrato\"]/tbody/tr/td[6]/a/span"));
 	}
 public String obterMensagemSucesso() {
-	return obterTexto(By.xpath("//div[@class='alert alert-sucess']"));
+	return obterTexto(By.xpath("/html/body/div[1]"));
+	
 }
+
 }

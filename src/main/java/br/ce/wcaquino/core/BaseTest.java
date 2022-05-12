@@ -20,21 +20,12 @@ import br.ce.wcaquino.pages.MenuPage;
 
 public class BaseTest extends DriverFactory {
 	
-	private LoginPage page = new LoginPage();
+	
 	
 	@Rule
 	public TestName testName = new TestName();
 	
-	@Before
-	public void inicializa() {
-		page.acessarTelaInicial();
-		
-		
-		page.setEmail("maicon.hatada17@gmail.com");
-		page.setSenha("bm12040707");
-		page.entrar();
-		
-	}
+	
 	
  @After
  public void finaliza() throws IOException {
