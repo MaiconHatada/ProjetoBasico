@@ -7,14 +7,11 @@ import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
-import org.junit.Test;
 import org.junit.rules.TestName;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import br.ce.wcaquino.pages.ContasPage;
 import br.ce.wcaquino.pages.LoginPage;
-import br.ce.wcaquino.pages.MenuPage;
 
 
 
@@ -25,7 +22,17 @@ public class BaseTest extends DriverFactory {
 	@Rule
 	public TestName testName = new TestName();
 	
+	private  LoginPage page = new LoginPage();
 	
+	
+	@Before
+	public  void inicializa() {
+		page.acessarTelaInicial();
+		
+		page.setEmail("maicon.hatada17@gmailcom");
+		page.setSenha("bm12040707");
+		page.entrar();
+	}
 	
  @After
  public void finaliza() throws IOException {
