@@ -22,17 +22,10 @@ public class BaseTest extends DriverFactory {
 	@Rule
 	public TestName testName = new TestName();
 	
-	private  LoginPage page = new LoginPage();
 	
 	
-	@Before
-	public  void inicializa() {
-		page.acessarTelaInicial();
-		
-		page.setEmail("maicon.hatada17@gmailcom");
-		page.setSenha("bm12040707");
-		page.entrar();
-	}
+	
+	
 	
  @After
  public void finaliza() throws IOException {

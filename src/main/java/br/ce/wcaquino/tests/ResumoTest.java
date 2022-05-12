@@ -28,7 +28,7 @@ public void test1ExcluirMovimentacao() {
 	
 	resumoPage.excluirMovimentacao();
 	
-	Assert.assertEquals("Movimentação removida com sucesso", 
+	Assert.assertEquals("Movimentação removida com sucesso!", 
 			resumoPage.obterMensagemSucesso());
 	
 	
