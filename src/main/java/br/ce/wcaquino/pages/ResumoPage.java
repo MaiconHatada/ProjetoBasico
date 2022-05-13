@@ -13,4 +13,12 @@ public String obterMensagemSucesso() {
 	
 }
 
+public void selecionarAno(String ano) {
+	selecionarCombo("ano", ano);
+}
+
+public void buscar() {
+	clicarBotao(By.xpath("//input[@value='Buscar']"));
+}
+
 }

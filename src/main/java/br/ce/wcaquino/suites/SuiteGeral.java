@@ -26,16 +26,16 @@ public class SuiteGeral {
 	private static LoginPage page = new LoginPage();
 	
 	@BeforeClass
-	public static void inicializa(){
+	public static void reset(){
 		page.acessarTelaInicial();
 		
 		page.setEmail("ferragens.saobraz@gmail.com");
 		page.setSenha("12345678");
 		page.entrar();
-	}
-	
-	@AfterClass
-	public static void finaliza(){
+		
+		page.resetar();
 		DriverFactory.killDriver();
 	}
+	
+	
 }
