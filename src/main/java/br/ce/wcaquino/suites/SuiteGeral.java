@@ -1,6 +1,5 @@
 package br.ce.wcaquino.suites;
 
-import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -29,13 +28,12 @@ public class SuiteGeral {
 	public static void reset(){
 		page.acessarTelaInicial();
 		
-		page.setEmail("ferragens.saobraz@gmail.com");
+		page.setEmail("ferragens.saobraz@gmail.com	");
 		page.setSenha("12345678");
 		page.entrar();
 		
 		page.resetar();
+		
 		DriverFactory.killDriver();
 	}
-	
-	
 }
